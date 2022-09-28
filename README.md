@@ -13,6 +13,7 @@ Two main python programs:
 
 ## Commands for starting the server in a docker container:
 ```docker build -t gocker_chat_server .```
+
 ```docker run -p 50051:50051 -it gocker_chat_server```
 
 ## Command for connecting to the server as a client, once the server is running:
