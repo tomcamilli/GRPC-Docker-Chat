@@ -6,7 +6,7 @@ Two main python programs:
 - src/chatter_client.py
 - src/chatter_server.py
 
-# Requirements:
+### Requirements:
 * docker
 * grpc
 * python3
