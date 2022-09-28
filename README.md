@@ -12,8 +12,8 @@ Two main python programs:
 * [python3](https://www.python.org/downloads/)
 
 ## Commands for starting the server in a docker container:
-docker build -t gocker_chat_server .
-docker run -p 50051:50051 -it gocker_chat_server
+```docker build -t gocker_chat_server .```
+```docker run -p 50051:50051 -it gocker_chat_server```
 
 ## Command for connecting to the server as a client, once the server is running:
-python3 src/chatter_client.py
+```python3 src/chatter_client.py```
