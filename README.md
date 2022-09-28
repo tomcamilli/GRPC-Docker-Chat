@@ -2,6 +2,7 @@
 by Thomas Camilli
 
 A simple client-server chat program using python, GRPC, and docker. Allows for multiple clients to connect and communicate over a server using GRPC.
+
 Two main python programs:
 * src/chatter_client.py
 * src/chatter_server.py
