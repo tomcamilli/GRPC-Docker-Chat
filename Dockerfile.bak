@@ -1,0 +1,4 @@
+FROM docker.io/grpc/python:latest
+WORKDIR /app
+COPY . .
+CMD ["python", "./src/chatter_server.py"]

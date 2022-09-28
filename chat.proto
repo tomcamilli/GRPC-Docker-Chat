@@ -1,0 +1,46 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "io.grpc.examples.chat";
+option java_outer_classname = "ChatProto";
+option objc_class_prefix = "CH";
+
+package chat;
+
+service Chatter {
+    
+  // Join Server
+  rpc JoinServer (ServerRequest) returns (ServerReply) {}
+
+  // Leave Server
+  rpc LeaveServer(ServerRequest) returns (ServerReply) {}
+
+  // Send Text
+  rpc SendText (SendingText) returns (ReceivingText) {}
+
+  rpc GetText (GetTextRequest) returns (GetTextReply) {} 
+}
+
+message ServerRequest {
+  string name = 1;
+}
+
+message SendingText {
+  string text = 1;
+}
+
+message GetTextRequest {
+}
+
+message ServerReply {
+  string message = 1;
+}
+
+message ReceivingText {
+  string message = 1;
+}
+
+message GetTextReply {
+  string message = 1;
+  int32 num = 2;
+}
